@@ -23,8 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '6hpdo*8z$e0!*@e@16#xk4#&3y7*@kts+y!v=kd+6ysv&oz9#1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
+DEBUG = bool(int(os.environ.get('DEBUG',1)))
 ALLOWED_HOSTS = []
 
 
@@ -122,13 +121,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 AUTH_USER_MODEL='profiles_api.UserProfile'
-
-
-# REST_FRAMEWORK = {
-#     'DEFAULT_RENDERER_CLASSES': [
-#         'rest_framework.renderers.JSONRenderer',
-#     ],
-#     'DEFAULT_PARSER_CLASSES': [
-#         'rest_framework.parsers.JSONParser',
-#     ]
-# }
+STATIC_ROOT='static/'
