@@ -1,11 +1,11 @@
 # Profiles REST API
 
 A working API that allows user to:
-* Create, Update, Delete & Manage user profies.
+* Create, Update, Delete & Manage user profiles.
 * Authenticate with username & password.
 * Manage user profile feed items.
 
-# [Click here to visit the API](http://ec2-35-154-156-27.ap-south-1.compute.amazonaws.com/api/)
+## [Click here to visit the API](http://ec2-35-154-156-27.ap-south-1.compute.amazonaws.com/api/)
 
 
 ## Tools Used
